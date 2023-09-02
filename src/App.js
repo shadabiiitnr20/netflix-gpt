@@ -1,8 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Body from "./components/Body";
 
 const App = () => {
-  return <div className="text-3xl font-bold underline">hello!!</div>;
+  return (
+    <>
+      <Body />
+    </>
+  );
 };
 
 const rootElement = document.getElementById("root");

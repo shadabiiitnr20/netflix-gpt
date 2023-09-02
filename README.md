@@ -1,11 +1,14 @@
 ## NetflixGPT
 
--- npm init
--- install parcel as dev dependency
--- configure index.html, index.css and App.js inside src folder
--- install react, react-dom
--- run the app by setting up everything
--- configure TailwindCSS
+- npm init
+- install parcel as dev dependency
+- configure index.html, index.css and App.js inside src folder
+- install react, react-dom
+- run the app by setting up everything
+- configure TailwindCSS
+- install react-router-dom and configure routing
+- Build Header component
+- Build Login/SignUp form
 
 ## Feature to be built
 
