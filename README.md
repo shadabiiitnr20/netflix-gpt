@@ -9,6 +9,16 @@
 - install react-router-dom and configure routing
 - Build Header component
 - Build Login/SignUp form
+- Form Validation
+- useRef hook
+- Firebase Setup
+- Deploying App to Production
+- Create SignUp User Account
+- Implement Sign In user API
+- Created Redux Store with userSLice
+- implemented SignOut
+- Update Profile
+- Fetch Movies from TMDB movies api
 
 ## Feature to be built
 
