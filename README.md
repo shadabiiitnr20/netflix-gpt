@@ -31,6 +31,17 @@
 - Fetch data for Trailer video, updated store, fetch the trailer
 - Embedded the Youtube video and made it autoplay and mute
 - Did the styling
+- Build the secondary container
+- Build Movie List Component
+- Build Movie Card
+- TMDB Image CDN URL
+- Styled the browser page
+- Making other list suggestions
+- Making Trailer Page for all the movie cards (issue: route is not protected)
+- Making error Route
+- Username Dropdown
+
+
 
 ## Feature to be built
 
