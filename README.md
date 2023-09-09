@@ -44,7 +44,8 @@
 - GPT search page
 - GPT search bar
 - Multi Lingual Support
-- Integrate GPT APIs/ get OpenAI keys
+- Integrate GPT APIs/ get OpenAI keys (paid API key)
+- Memoization feature in custom hooks
 
 
 ## Firebase Commands - 

@@ -1,7 +1,7 @@
 import React from "react";
 
 const GPTSearchSuggestions = () => {
-  return <div>GPTSearchSuggestions</div>;
+  return <div>{}</div>;
 };
 
 export default GPTSearchSuggestions;
