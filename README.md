@@ -40,6 +40,20 @@
 - Making Trailer Page for all the movie cards (issue: route is not protected)
 - Making error Route
 - Username Dropdown
+- Building GPT search feature, create a button on header
+- GPT search page
+- GPT search bar
+- Multi Lingual Support
+- Integrate GPT APIs/ get OpenAI keys
+
+
+## Firebase Commands - 
+- before rinning the command 'firebase login'. Please install firebase CLI using the command
+"npm install -g firebase-tools"
+- check with firbase login
+- firebase init
+- firebase deploy
+- https://stackoverflow.com/questions/53718983/my-react-project-not-working-after-deploy-to-firebase-hosting
 
 
 

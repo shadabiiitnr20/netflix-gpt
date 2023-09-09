@@ -5,6 +5,9 @@ import { useNavigate } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 import { addUser, removeUser } from "../../utils/userSlice";
 import { logo, userIcon } from "../../utils/constants";
+import { toggleGPTSearchView } from "../../utils/GPTSlice";
+import { SUPPORTED_LANGUAGES } from "../../utils/constants";
+import { changeLanguage } from "../../utils/configSlice";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -28,6 +31,7 @@ const Header = () => {
   }, []);
 
   const user = useSelector((store) => store.user);
+  const GPTSearchToggleValue = useSelector((store) => store.gpt.showGPTSearch);
 
   const handleSignOut = () => {
     signOut(auth)
@@ -41,11 +45,41 @@ const Header = () => {
     setShowDropdown(!showDropdown);
   };
 
+  const handleGPTSearchClick = () => {
+    dispatch(toggleGPTSearchView());
+  };
+
+  const handleLanguageChange = (e) => {
+    dispatch(changeLanguage(e.target.value));
+  };
+
   return (
     <div className="flex w-full absolute px-8 py-2 bg-gradient-to-b from-black z-10 justify-between">
       <img className="w-52" src={logo} alt="netflix-logo" />
       {user && (
         <div className="flex p-2">
+          {GPTSearchToggleValue && (
+            <select
+              onChange={handleLanguageChange}
+              className="mt-2 w-24 h-11 mr-2 rounded-lg bg-stone-500 text-white font-semibold"
+            >
+              {SUPPORTED_LANGUAGES.map((lang) => (
+                <option
+                  className="rounded-lg bg-stone-500 text-white text-lg"
+                  key={lang.identifier}
+                  value={lang.identifier}
+                >
+                  {lang.name}
+                </option>
+              ))}
+            </select>
+          )}
+          <button
+            onClick={handleGPTSearchClick}
+            className="w-24 h-11 mt-2 bg-red-700 text-white mr-2 rounded-lg font-semibold"
+          >
+            {GPTSearchToggleValue ? "Home Page" : "GPT Search"}
+          </button>
           <img
             onClick={showDropDownHandle}
             className="w-11 h-11 rounded mt-2 hover:cursor-pointer "
