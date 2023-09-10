@@ -54,8 +54,8 @@ const Header = () => {
   };
 
   return (
-    <div className="flex w-full absolute px-8 py-2 bg-gradient-to-b from-black z-10 justify-between">
-      <img className="w-52" src={logo} alt="netflix-logo" />
+    <div className="flex flex-col md:flex-row w-full absolute px-8 py-2 bg-gradient-to-b from-black z-10 justify-between">
+      <img className="w-52 mx-auto md:mx-0" src={logo} alt="netflix-logo" />
       {user && (
         <div className="flex p-2">
           {GPTSearchToggleValue && (

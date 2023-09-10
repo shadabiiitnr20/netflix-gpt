@@ -24,16 +24,16 @@ const GPTSearchBar = () => {
   };
 
   return (
-    <div className="pt-[15%]">
+    <div className="pt-[60%] md:pt-[15%]">
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-3/6 mx-auto left-0 right-0 pl-20 bg-opacity-80 bg-black rounded-lg"
+        className="w-2/3 md:w-3/6 h-24 md:h-auto mx-auto left-0 right-0 pl-20 bg-opacity-80 bg-black rounded-lg"
       >
         <input
           ref={inputSearchText}
           type="text"
           placeholder={language[languageKey]?.getSearchPlaceholder}
-          className="rounded w-96 py-2 px-4 m-4"
+          className="rounded md:w-96 md:py-2 md:px-4 md:m-4 mt-6 w-fit mr-0"
         />
         <button
           onClick={handleGPTSearchClick}

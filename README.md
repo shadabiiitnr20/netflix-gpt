@@ -46,6 +46,7 @@
 - Multi Lingual Support
 - Integrate GPT APIs/ get OpenAI keys (paid API key)
 - Memoization feature in custom hooks
+- Added .env file and secured our API keys
 
 
 ## Firebase Commands - 
